@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Haven Bookstore | Community</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Book Haven Bookstore home">
+        <img class="logo" src="assets/book-haven-logo.svg" alt="Book Haven Bookstore logo" />
+        <div class="brand-text">
+          <div class="brand-title">Book Haven Bookstore</div>
+          <div class="brand-tagline">Celebrate the written word</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+          Menu
+        </button>
+        <ul id="primaryNav" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="community.html" aria-current="page">Community</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section class="section">
+      <h1>Community Corner</h1>
+      <p class="lead">Book Haven Bookstore supports readers, students, and local creators by hosting events and collaborating with community partners. This page highlights customer testimonials, community involvement, and upcoming activities.</p>
+    </section>
+
+    <section class="section">
+      <h2>Customer Testimonials</h2>
+      <div class="cards">
+        <article class="card">
+          <h3 class="card-title">“A cozy place to discover new authors.”</h3>
+          <p class="muted">The staff recommendations are consistently excellent, and I love the curated displays that make it easy to explore new genres.</p>
+          <p><strong>— Jordan M.</strong></p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">“Perfect for students and planners.”</h3>
+          <p class="muted">I stop in for journals and school supplies. The store always has what I need, and the environment is calm and welcoming.</p>
+          <p><strong>— Priya S.</strong></p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">“Great community events.”</h3>
+          <p class="muted">The book club and author talks are well organized and inclusive. It feels like a real community of readers.</p>
+          <p><strong>— Alex R.</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Community Involvement</h2>
+      <div class="cards">
+        <article class="card">
+          <h3 class="card-title">Local School Reading Drives</h3>
+          <p class="muted">We partner with nearby schools to support reading programs and provide discounted supplies for classrooms.</p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">Independent Author Spotlights</h3>
+          <p class="muted">Book Haven features rotating local authors and hosts meet-and-greet events to help readers connect with writers.</p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">Neighborhood Literacy Partners</h3>
+          <p class="muted">We collaborate with nonprofits that promote adult literacy, tutoring, and access to educational resources.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Events and Collaborations</h2>
+      <div class="table-wrap">
+        <table class="hours" aria-label="Upcoming events">
+          <thead>
+            <tr>
+              <th scope="col">Event</th>
+              <th scope="col">Date</th>
+              <th scope="col">Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monthly Book Club</td>
+              <td>First Thursday</td>
+              <td>Group discussion and curated reading list (all welcome).</td>
+            </tr>
+            <tr>
+              <td>Journaling Workshop</td>
+              <td>Second Saturday</td>
+              <td>Hands-on workshop featuring notebooks and stationery.</td>
+            </tr>
+            <tr>
+              <td>Local Author Night</td>
+              <td>Quarterly</td>
+              <td>Readings, Q&amp;A, and signed copies available for purchase.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">To collaborate or host an event, submit a request on the <a href="about.html">About Us</a> page using the custom order checkbox.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <section class="footer-box" aria-label="Newsletter signup">
+        <h2 class="footer-title">Sign up for our Newsletter</h2>
+        <p class="muted">Get monthly reading recommendations and event announcements.</p>
+        <div class="subscribe-row">
+          <label class="visually-hidden" for="subscribeEmail">Email address</label>
+          <input id="subscribeEmail" type="email" placeholder="you@example.com" autocomplete="email" />
+          <button id="subscribeBtn" type="button">Subscribe</button>
+        </div>
+        <p id="subscribeMsg" class="muted" aria-live="polite"></p>
+      </section>
+
+      <section class="footer-box" aria-label="Social media links">
+        <h2 class="footer-title">Follow</h2>
+        <div class="social">
+          <a class="social-link" href="#" aria-label="Book Haven on Facebook">Fb</a>
+          <a class="social-link" href="#" aria-label="Book Haven on Instagram">Ig</a>
+          <a class="social-link" href="#" aria-label="Book Haven on X">X</a>
+        </div>
+        <p class="muted">Prefer to browse? Visit the <a href="gallery.html">Gallery</a> to view featured items.</p>
+      </section>
+    </div>
+
+    <div class="container footer-bottom" aria-label="Footer navigation">
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="community.html" aria-current="page">Community</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> Book Haven Bookstore</p>
+    </div>
+  </footer>
+</body>
+</html>

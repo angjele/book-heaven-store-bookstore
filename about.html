@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Haven Bookstore | About Us</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <a class="brand__logo" href="index.html" aria-label="Book Haven Bookstore Home">
+        <img src="assets/logo-bookhaven.svg" alt="Book Haven Bookstore logo" width="48" height="48" />
+      </a>
+      <div class="brand__title">
+        <h1>Book Haven Bookstore</h1>
+        <p class="tagline">About Us & Contact</p>
+      </div>
+    </div>
+
+    <nav class="top-nav" aria-label="Primary">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="nav-link" href="about.html" aria-current="page">About Us</a>
+      <a class="nav-link" href="community.html">Community</a>
+    </nav>
+  </header>
+
+  <main id="main" class="page" role="main">
+    <section class="content-section">
+      <h2>About Book Haven</h2>
+      <p>
+        Book Haven Bookstore is a local treasure for book enthusiasts, offering a diverse selection of books,
+        magazines, journals, and office supplies. Our mission is to celebrate the written word by creating an inviting
+        space for literary discovery and lifelong learning.
+      </p>
+    </section>
+
+    <section class="content-section">
+      <h2>Business Hours</h2>
+      <div class="table-wrap" aria-label="Business Hours">
+        <table class="hours-table">
+          <thead>
+            <tr><th scope="col">Day</th><th scope="col">Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday–Friday</td><td>9:00 a.m. – 8:00 p.m.</td></tr>
+            <tr><td>Saturday</td><td>10:00 a.m. – 6:00 p.m.</td></tr>
+            <tr><td>Sunday</td><td>11:00 a.m. – 5:00 p.m.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">For urgent questions, please call (555) 013-2424 or visit us in person.</p>
+    </section>
+
+    <section class="content-section" aria-labelledby="contactHeading">
+      <h2 id="contactHeading">Contact Us</h2>
+      <p class="muted">
+        Use this form to send feedback or request a custom order (for example, a classroom set, book club bundle,
+        or special order title). Required fields are marked.
+      </p>
+
+      <form id="contactForm" class="form" novalidate>
+        <div class="form-row">
+          <label for="fullName">Name <span aria-hidden="true">*</span></label>
+          <input id="fullName" name="fullName" type="text" autocomplete="name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email Address <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Optional" />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Feedback/Order Information <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-row form-row--inline">
+          <input id="customOrder" name="customOrder" type="checkbox" />
+          <label for="customOrder">Custom Order</label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn--primary">Submit</button>
+          <button type="button" id="clearForm" class="btn btn--muted">Clear Form</button>
+        </div>
+
+        <p class="note">
+          Privacy note: This website stores your form submission locally in your browser for demonstration purposes.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <section class="subscribe" aria-labelledby="subscribeHeading">
+        <h2 id="subscribeHeading">Sign up for our Newsletter</h2>
+        <form class="subscribe-form" data-subscribe-form>
+          <label class="sr-only" for="subscribeEmail">Email</label>
+          <input id="subscribeEmail" name="subscribeEmail" type="email" placeholder="Your email" required />
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </form>
+        <p class="muted">We send occasional updates about new arrivals, events, and reading lists.</p>
+      </section>
+
+      <section class="footer-links">
+        <h2 class="sr-only">Footer links</h2>
+        <div class="social" aria-label="Social media">
+          <a href="#" aria-label="Book Haven on Facebook">Facebook</a>
+          <a href="#" aria-label="Book Haven on Instagram">Instagram</a>
+          <a href="#" aria-label="Book Haven on X">X</a>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About Us</a>
+          <a href="community.html">Community</a>
+        </nav>
+      </section>
+    </div>
+
+    <div class="copyright">
+      <p>© <span id="year"></span> Book Haven Bookstore. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
